@@ -18,6 +18,8 @@
 		ECF9DA831C9504AA0061D91F /* FWMood+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF9DA811C9504AA0061D91F /* FWMood+CoreDataProperties.swift */; };
 		ECF9DA841C9504AA0061D91F /* FWMood.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF9DA821C9504AA0061D91F /* FWMood.swift */; };
 		ECF9DA861C9505040061D91F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF9DA851C9505040061D91F /* Constants.swift */; };
+		ECF9DA881C9508BB0061D91F /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF9DA871C9508BB0061D91F /* TrackViewController.swift */; };
+		ECF9DA8A1C95ADAC0061D91F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF9DA891C95ADAC0061D91F /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		ECF9DA811C9504AA0061D91F /* FWMood+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FWMood+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		ECF9DA821C9504AA0061D91F /* FWMood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWMood.swift; sourceTree = "<group>"; };
 		ECF9DA851C9505040061D91F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ECF9DA871C9508BB0061D91F /* TrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
+		ECF9DA891C95ADAC0061D91F /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				ECF9DA501C9501880061D91F /* AppDelegate.swift */,
 				ECF9DA851C9505040061D91F /* Constants.swift */,
 				ECF9DA521C9501880061D91F /* ViewController.swift */,
+				ECF9DA871C9508BB0061D91F /* TrackViewController.swift */,
+				ECF9DA891C95ADAC0061D91F /* HistoryViewController.swift */,
 				ECF9DA541C9501880061D91F /* Main.storyboard */,
 				ECF9DA5A1C9501890061D91F /* Assets.xcassets */,
 				ECF9DA5C1C9501890061D91F /* LaunchScreen.storyboard */,
@@ -270,10 +276,12 @@
 			files = (
 				ECF9DA591C9501880061D91F /* Nine.xcdatamodeld in Sources */,
 				ECF9DA831C9504AA0061D91F /* FWMood+CoreDataProperties.swift in Sources */,
+				ECF9DA881C9508BB0061D91F /* TrackViewController.swift in Sources */,
 				ECF9DA841C9504AA0061D91F /* FWMood.swift in Sources */,
 				ECF9DA531C9501880061D91F /* ViewController.swift in Sources */,
 				ECF9DA511C9501880061D91F /* AppDelegate.swift in Sources */,
 				ECF9DA861C9505040061D91F /* Constants.swift in Sources */,
+				ECF9DA8A1C95ADAC0061D91F /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
