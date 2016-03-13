@@ -10,13 +10,13 @@ import Foundation
 
 import UIKit
 import CoreData
+import Charts
 
 class HistoryViewController : UIViewController {
     var moods = [FWMood]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func viewDidAppear(animated: Bool) {
