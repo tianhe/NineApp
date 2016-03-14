@@ -86,3 +86,13 @@ extension ViewController: UIPageViewControllerDataSource {
     }
 }
 
+extension UIViewController {
+    func screenBoundsFixedToPortraitOrientation() -> CGRect {
+        let screen: UIScreen = UIScreen.mainScreen()
+        if (screen.respondsToSelector(Selector("fixedCoordinateSpace"))){
+            return screen.coordinateSpace.convertRect(screen.bounds, fromCoordinateSpace: screen.fixedCoordinateSpace)
+        }
+        return screen.bounds;
+    }
+}
+

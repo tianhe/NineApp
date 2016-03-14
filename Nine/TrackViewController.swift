@@ -32,12 +32,14 @@ class TrackViewController: UIViewController {
             let row = CGFloat(index / 3)
             let column = CGFloat(index % 3)
             
-            let button   = UIButton(frame: CGRectMake(margins/2+buttonSize*column, margins/2+buttonSize*row, buttonSize, buttonSize))
+            let button   = UIButton(frame: CGRectMake(margins/2+buttonSize*(column), margins/2+buttonSize*(3-row), buttonSize, buttonSize))
             
             button.backgroundColor = UIColor.whiteColor()
             button.layer.borderWidth = 1.0
             button.layer.borderColor = UIColor.grayColor().CGColor
             button.tag = index
+            button.setTitle(String(index), forState: UIControlState.Normal)
+            button.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)
             button.addTarget(self, action: "moodSelected:", forControlEvents: UIControlEvents.TouchUpInside)
             self.view.addSubview(button)
             buttons.append(button)
@@ -51,15 +53,7 @@ class TrackViewController: UIViewController {
         doneButton.backgroundColor = Constants.primaryLightColor
         self.view.addSubview(doneButton)
     }
-    
-    func screenBoundsFixedToPortraitOrientation() -> CGRect {
-        let screen: UIScreen = UIScreen.mainScreen()
-        if (screen.respondsToSelector(Selector("fixedCoordinateSpace"))){
-            return screen.coordinateSpace.convertRect(screen.bounds, fromCoordinateSpace: screen.fixedCoordinateSpace)
-        }
-        return screen.bounds;
-    }
-    
+        
     //Selectors
     
     func moodSelected(sender: UIButton!) {
@@ -73,7 +67,7 @@ class TrackViewController: UIViewController {
         }
         self.lastTappedButton = sender
         
-        sender.backgroundColor = Constants.primaryColor
+        sender.backgroundColor = Constants.colorScheme[sender.tag]
         doneButton.enabled = true
         doneButton.backgroundColor = Constants.primaryColor
     }
