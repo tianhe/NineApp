@@ -238,7 +238,7 @@
 				TargetAttributes = {
 					ECF9DA4C1C9501880061D91F = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 47BJNQ6VX2;
+						DevelopmentTeam = 5L8JUJ7WZ6;
 					};
 					ECF9DA631C9501890061D91F = {
 						CreatedOnToolsVersion = 7.2;
@@ -500,11 +500,13 @@
 			baseConfigurationReference = 2D1C3DB7857AF589396D671C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Nine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Carpelada.Nine;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carpelada.Nine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -515,11 +517,13 @@
 			baseConfigurationReference = 18507A446F8A79F193954455 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Nine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Carpelada.Nine;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carpelada.Nine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
