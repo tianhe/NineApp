@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4334658058FAB7E11B2677DE /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56EB0682FC6AB25FA8CC3371 /* Pods.framework */; };
+		EC0786791C9E3EDD00A39829 /* FWSliderTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0786781C9E3EDD00A39829 /* FWSliderTrackViewController.swift */; };
+		EC0786811C9E4BE300A39829 /* FWSliderInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0786801C9E4BE300A39829 /* FWSliderInputView.swift */; };
 		ECF9DA511C9501880061D91F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF9DA501C9501880061D91F /* AppDelegate.swift */; };
 		ECF9DA531C9501880061D91F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF9DA521C9501880061D91F /* ViewController.swift */; };
 		ECF9DA561C9501880061D91F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF9DA541C9501880061D91F /* Main.storyboard */; };
@@ -19,8 +21,8 @@
 		ECF9DA831C9504AA0061D91F /* FWMood+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF9DA811C9504AA0061D91F /* FWMood+CoreDataProperties.swift */; };
 		ECF9DA841C9504AA0061D91F /* FWMood.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF9DA821C9504AA0061D91F /* FWMood.swift */; };
 		ECF9DA861C9505040061D91F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF9DA851C9505040061D91F /* Constants.swift */; };
-		ECF9DA881C9508BB0061D91F /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF9DA871C9508BB0061D91F /* TrackViewController.swift */; };
-		ECF9DA8A1C95ADAC0061D91F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF9DA891C95ADAC0061D91F /* HistoryViewController.swift */; };
+		ECF9DA881C9508BB0061D91F /* FWGridTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF9DA871C9508BB0061D91F /* FWGridTrackViewController.swift */; };
+		ECF9DA8A1C95ADAC0061D91F /* FWHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF9DA891C95ADAC0061D91F /* FWHistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		18507A446F8A79F193954455 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		2D1C3DB7857AF589396D671C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		56EB0682FC6AB25FA8CC3371 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC0786781C9E3EDD00A39829 /* FWSliderTrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWSliderTrackViewController.swift; sourceTree = "<group>"; };
+		EC0786801C9E4BE300A39829 /* FWSliderInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWSliderInputView.swift; sourceTree = "<group>"; };
 		ECF9DA4D1C9501880061D91F /* Nine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF9DA501C9501880061D91F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECF9DA521C9501880061D91F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,8 +65,8 @@
 		ECF9DA811C9504AA0061D91F /* FWMood+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FWMood+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		ECF9DA821C9504AA0061D91F /* FWMood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWMood.swift; sourceTree = "<group>"; };
 		ECF9DA851C9505040061D91F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		ECF9DA871C9508BB0061D91F /* TrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
-		ECF9DA891C95ADAC0061D91F /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		ECF9DA871C9508BB0061D91F /* FWGridTrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWGridTrackViewController.swift; sourceTree = "<group>"; };
+		ECF9DA891C95ADAC0061D91F /* FWHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWHistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +140,10 @@
 				ECF9DA501C9501880061D91F /* AppDelegate.swift */,
 				ECF9DA851C9505040061D91F /* Constants.swift */,
 				ECF9DA521C9501880061D91F /* ViewController.swift */,
-				ECF9DA871C9508BB0061D91F /* TrackViewController.swift */,
-				ECF9DA891C95ADAC0061D91F /* HistoryViewController.swift */,
+				ECF9DA871C9508BB0061D91F /* FWGridTrackViewController.swift */,
+				EC0786781C9E3EDD00A39829 /* FWSliderTrackViewController.swift */,
+				EC0786801C9E4BE300A39829 /* FWSliderInputView.swift */,
+				ECF9DA891C95ADAC0061D91F /* FWHistoryViewController.swift */,
 				ECF9DA541C9501880061D91F /* Main.storyboard */,
 				ECF9DA5A1C9501890061D91F /* Assets.xcassets */,
 				ECF9DA5C1C9501890061D91F /* LaunchScreen.storyboard */,
@@ -352,12 +358,14 @@
 			files = (
 				ECF9DA591C9501880061D91F /* Nine.xcdatamodeld in Sources */,
 				ECF9DA831C9504AA0061D91F /* FWMood+CoreDataProperties.swift in Sources */,
-				ECF9DA881C9508BB0061D91F /* TrackViewController.swift in Sources */,
+				ECF9DA881C9508BB0061D91F /* FWGridTrackViewController.swift in Sources */,
 				ECF9DA841C9504AA0061D91F /* FWMood.swift in Sources */,
 				ECF9DA531C9501880061D91F /* ViewController.swift in Sources */,
+				EC0786811C9E4BE300A39829 /* FWSliderInputView.swift in Sources */,
 				ECF9DA511C9501880061D91F /* AppDelegate.swift in Sources */,
 				ECF9DA861C9505040061D91F /* Constants.swift in Sources */,
-				ECF9DA8A1C95ADAC0061D91F /* HistoryViewController.swift in Sources */,
+				EC0786791C9E3EDD00A39829 /* FWSliderTrackViewController.swift in Sources */,
+				ECF9DA8A1C95ADAC0061D91F /* FWHistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

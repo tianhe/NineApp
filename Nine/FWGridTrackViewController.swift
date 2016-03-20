@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class TrackViewController: UIViewController {
+class FWGridTrackViewController: UIViewController {
     //weak var tableView: UITableView!
     var moods = [NSManagedObject]()
     var selectedEnergy = 0
@@ -25,7 +25,7 @@ class TrackViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         let width = screenBoundsFixedToPortraitOrientation().width
         let height = screenBoundsFixedToPortraitOrientation().height
-        let margins = CGFloat(100.0)
+        let margins = CGFloat(75.0)
         let buttonSize = (width - margins)/3
         
         for index in 0...8 {
@@ -39,18 +39,29 @@ class TrackViewController: UIViewController {
             button.layer.borderColor = UIColor.grayColor().CGColor
             button.tag = index
             button.setTitle(String(index), forState: UIControlState.Normal)
-            button.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)
+            button.setTitleColor(UIColor.lightGrayColor(), forState: UIControlState.Normal)
             button.addTarget(self, action: "moodSelected:", forControlEvents: UIControlEvents.TouchUpInside)
             self.view.addSubview(button)
             buttons.append(button)
         }
         
-        doneButton   = UIButton(frame: CGRectMake(margins/2, height - margins, buttonSize*3, 100))
+        let xLabel = UILabel(frame: CGRectMake(margins/2+buttonSize*2-70, margins/2+buttonSize*4, 100, 40))
+        xLabel.text = "Energy"
+        xLabel.textColor = Constants.primaryLightColor
+        self.view.addSubview(xLabel)
+
+        let yLabel = UILabel(frame: CGRectMake(0, margins/2+buttonSize*2, 50, 70))
+        yLabel.text = "Mood"
+        yLabel.textColor = Constants.primaryLightColor
+        yLabel.transform = CGAffineTransformMakeRotation(CGFloat((270.0 * M_PI)/180.0))
+        self.view.addSubview(yLabel)
+
+        doneButton   = UIButton(frame: CGRectMake(margins/2, height - margins - 60, buttonSize*3, 60))
         doneButton.setTitle("DONE", forState: UIControlState.Normal)
         doneButton.addTarget(self, action: "doneSelected:", forControlEvents: UIControlEvents.TouchUpInside)
         doneButton.tag = 9
         doneButton.enabled = false
-        doneButton.backgroundColor = Constants.primaryLightColor
+        doneButton.backgroundColor = Constants.primaryColor
         self.view.addSubview(doneButton)
     }
         
@@ -69,7 +80,6 @@ class TrackViewController: UIViewController {
         
         sender.backgroundColor = Constants.colorScheme[sender.tag]
         doneButton.enabled = true
-        doneButton.backgroundColor = Constants.primaryColor
     }
     
     func doneSelected(sender: UIButton!) {
@@ -92,6 +102,5 @@ class TrackViewController: UIViewController {
         
         self.lastTappedButton!.backgroundColor = Constants.primaryLightColor
         doneButton.enabled = false
-        doneButton.backgroundColor = Constants.primaryLightColor
     }
 }

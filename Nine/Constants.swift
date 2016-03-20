@@ -9,11 +9,11 @@
 import UIKit
 
 struct Constants {
-    static let MaxMood = 1
-    static let MinMood = -1
-    static let MaxEnergy = 1
-    static let MinEnergy = -1
-    static let NormalizedScore = 100
+    static let MaxMood = 100
+    static let MinMood = -100
+    static let MaxEnergy = 100
+    static let MinEnergy = -100
+    static let NormalizedScore = Float(100)
     
     static let primaryColor = UIColor(red: 255.0/255.0, green: 158.0/255.0, blue: 75.0/255.0, alpha: 1.0)
     static let primaryLightColor = UIColor(red: 255.0/255.0, green: 196/255.0, blue: 146/255.0, alpha: 1)

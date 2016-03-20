@@ -11,18 +11,9 @@ import UIKit
 class ViewController: UIPageViewController {
     
     private(set) lazy var orderedViewControllers: [UIViewController] = {
-        return [TrackViewController(), HistoryViewController()]
+        return [FWSliderTrackViewController(), FWHistoryViewController()]
     }()
 
-    override init(transitionStyle style: UIPageViewControllerTransitionStyle, navigationOrientation: UIPageViewControllerNavigationOrientation, options: [String : AnyObject]?) {
-        super.init(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: options)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -83,6 +74,18 @@ extension ViewController: UIPageViewControllerDataSource {
             }
             
             return orderedViewControllers[nextIndex]
+    }
+    
+    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
+        return orderedViewControllers.count
+    }
+    
+    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
+        guard let firstViewController = viewControllers?.first,
+            firstViewControllerIndex = orderedViewControllers.indexOf(firstViewController) else {
+                return 0
+        }
+        return firstViewControllerIndex
     }
 }
 
