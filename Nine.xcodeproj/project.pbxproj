@@ -11,7 +11,7 @@
 		EC0786791C9E3EDD00A39829 /* FWSliderTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0786781C9E3EDD00A39829 /* FWSliderTrackViewController.swift */; };
 		EC0786811C9E4BE300A39829 /* FWSliderInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0786801C9E4BE300A39829 /* FWSliderInputView.swift */; };
 		ECF9DA511C9501880061D91F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF9DA501C9501880061D91F /* AppDelegate.swift */; };
-		ECF9DA531C9501880061D91F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF9DA521C9501880061D91F /* ViewController.swift */; };
+		ECF9DA531C9501880061D91F /* FWPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF9DA521C9501880061D91F /* FWPageViewController.swift */; };
 		ECF9DA561C9501880061D91F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF9DA541C9501880061D91F /* Main.storyboard */; };
 		ECF9DA591C9501880061D91F /* Nine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECF9DA571C9501880061D91F /* Nine.xcdatamodeld */; };
 		ECF9DA5B1C9501890061D91F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF9DA5A1C9501890061D91F /* Assets.xcassets */; };
@@ -50,7 +50,7 @@
 		EC0786801C9E4BE300A39829 /* FWSliderInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWSliderInputView.swift; sourceTree = "<group>"; };
 		ECF9DA4D1C9501880061D91F /* Nine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF9DA501C9501880061D91F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ECF9DA521C9501880061D91F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECF9DA521C9501880061D91F /* FWPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FWPageViewController.swift; sourceTree = "<group>"; };
 		ECF9DA551C9501880061D91F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECF9DA581C9501880061D91F /* Nine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nine.xcdatamodel; sourceTree = "<group>"; };
 		ECF9DA5A1C9501890061D91F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 			children = (
 				ECF9DA501C9501880061D91F /* AppDelegate.swift */,
 				ECF9DA851C9505040061D91F /* Constants.swift */,
-				ECF9DA521C9501880061D91F /* ViewController.swift */,
+				ECF9DA521C9501880061D91F /* FWPageViewController.swift */,
 				ECF9DA871C9508BB0061D91F /* FWGridTrackViewController.swift */,
 				EC0786781C9E3EDD00A39829 /* FWSliderTrackViewController.swift */,
 				EC0786801C9E4BE300A39829 /* FWSliderInputView.swift */,
@@ -360,7 +360,7 @@
 				ECF9DA831C9504AA0061D91F /* FWMood+CoreDataProperties.swift in Sources */,
 				ECF9DA881C9508BB0061D91F /* FWGridTrackViewController.swift in Sources */,
 				ECF9DA841C9504AA0061D91F /* FWMood.swift in Sources */,
-				ECF9DA531C9501880061D91F /* ViewController.swift in Sources */,
+				ECF9DA531C9501880061D91F /* FWPageViewController.swift in Sources */,
 				EC0786811C9E4BE300A39829 /* FWSliderInputView.swift in Sources */,
 				ECF9DA511C9501880061D91F /* AppDelegate.swift in Sources */,
 				ECF9DA861C9505040061D91F /* Constants.swift in Sources */,

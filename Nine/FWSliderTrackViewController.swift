@@ -28,12 +28,12 @@ class FWSliderTrackViewController: UIViewController {
         let sliderWidth = width - margins
         
         //energy
-        let energyInput = inputUnit(CGRectMake(margins/2, 100, sliderWidth, 100), labelText: "Energy", action: "energySelected:")
+        let energyInput = inputUnit(CGRectMake(margins/2, 250, sliderWidth, 150), labelText: "Energy", action: "energySelected:")
         self.view.addSubview(energyInput)
 
         
         //mood
-        let moodInput = inputUnit(CGRectMake(margins/2, 200, sliderWidth, 100), labelText: "Mood", action: "moodSelected:")
+        let moodInput = inputUnit(CGRectMake(margins/2, 400, sliderWidth, 150), labelText: "Mood", action: "moodSelected:")
         self.view.addSubview(moodInput)
         
         
@@ -59,6 +59,7 @@ class FWSliderTrackViewController: UIViewController {
         slider.maximumValue = Constants.NormalizedScore
         slider.minimumValue = -1*Constants.NormalizedScore
         slider.addTarget(self, action: action, forControlEvents: UIControlEvents.TouchUpInside)
+        slider.trackRectForBounds(CGRectMake(0, 0, rect.width, 40))
         inputUnit.addSubview(slider)
         
         return inputUnit

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIPageViewController {
+class FWPageViewController: UIPageViewController {
     
     private(set) lazy var orderedViewControllers: [UIViewController] = {
         return [FWSliderTrackViewController(), FWHistoryViewController()]
@@ -35,7 +35,7 @@ class ViewController: UIPageViewController {
 }
 
 // MARK: UIPageViewControllerDataSource
-extension ViewController: UIPageViewControllerDataSource {
+extension FWPageViewController: UIPageViewControllerDataSource {
     
     func pageViewController(pageViewController: UIPageViewController,
         viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
